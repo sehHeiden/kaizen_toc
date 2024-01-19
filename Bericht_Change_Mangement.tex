@@ -1,6 +1,7 @@
 % !TeX spellcheck = de_DE
 \documentclass[acmlarge,authorversion,nonacm]{acmart}
-
+\usepackage[acronym]{glossaries}
+\usepackage{todonotes}
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     Bib\TeX}}}
@@ -20,6 +21,8 @@
 \acmArticle{28}
 \acmMonth{2}
 
+\newacronym{toc}{TOC}{Theory of Contraints}
+\newacronym{llm}{LLM}{Large Language Model}
 
 \begin{document}
 	\title{ChangeMangement - Vergleich von Kaizen und Theory of Constraints}
@@ -43,7 +46,7 @@
 \end{abstract}
 
 
-\received{31 January 2024}
+\received{31 Januar 2024}
 
 
 %%
@@ -53,7 +56,9 @@
 
 \section{Einleitung und Zielstellung}
 
-
+Wir wollen in dieser Arbeit die beiden die beiden Change Mangement-Ansätze Kaizen und \gls{toc} gegenüberstellen.
+Gleichzeitig soll die Leistungsfähigkeit von \glspl{llm} zum schreiben von naturwissenschaftlichen Fachaufsätzen in diesem Szenario getestet und ausgereizt werden.
+\todo{weitere Erläuterungen von Kaizen und TOC mit Quellen.}
 \section{Methoden}\label{sec:methods}
 \input{methods}
 
