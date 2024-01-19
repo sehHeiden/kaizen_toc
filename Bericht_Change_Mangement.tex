@@ -1,0 +1,91 @@
+% !TeX spellcheck = de_DE
+\documentclass[acmlarge,authorversion,nonacm]{acmart}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+
+%\setcopyright{acmcopyright}
+\copyrightyear{2024}
+\acmYear{2024}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+
+%%
+%% These commands are for a JOURNAL article.
+\acmJournal{JACM}
+\acmVolume{37}
+\acmNumber{4}
+\acmArticle{28}
+\acmMonth{2}
+
+
+\begin{document}
+	\title{ChangeMangement - Vergleich von Kaizen und Theory of Constraints}
+	
+	\author{Sebastian Heiden}
+	\email{u38439@hs-harz.de}
+	\affiliation{%
+		\institution{Hochschule Harz}
+		\streetaddress{Friedrichstrasse 57-59}
+		\city{Wernigerode}
+		\state{Sachsen-Anhalt}
+		\country{Deutschland}
+		\postcode{38855}
+	}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+
+\end{abstract}
+
+
+\received{31 January 2024}
+
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Einleitung und Zielstellung}
+
+
+\section{Methoden}\label{sec:methods}
+\input{methods}
+
+\section{Ergebnisse}\label{sec:results}
+\input{results}
+
+\section{Diskussion}\label{sec:discussion}
+\input{discussion}
+
+\section{Schlussfolgerung}\label{sec:conclusion}
+
+
+\begin{acks}
+Vielen Dank an Katerina Shapiro-Heiden für die Untersuchung der automatisierten Übersetzungen.
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+\newpage
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\section{Appendix}
+
+\subsection{Prompts und Antworten der Voruntersuchung}
+\input{voruntersuchung}
+
+\subsection{Prompts und Antworten der Untersuchung}
+
+
+
+\end{document}
+\endinput
