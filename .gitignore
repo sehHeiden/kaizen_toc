@@ -1,0 +1,10 @@
+# Specify filepatterns you want git to ignore.
+*.log
+*.aux
+*.bbl
+*.pdf
+*.blg
+*.out
+*.synctex.gz
+*.cut
+*.kate-swp
