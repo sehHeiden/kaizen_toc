@@ -1,7 +1,13 @@
 % !TeX spellcheck = de_DE
 \documentclass[acmlarge,authorversion,nonacm]{acmart}
+
+\usepackage[german]{babel}
 \usepackage[acronym]{glossaries}
 \usepackage{todonotes}
+
+\renewcommand{\acksname}{Danksagungen}
+\renewcommand{\appendixname}{Anhang}
+
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     Bib\TeX}}}
@@ -56,9 +62,11 @@
 
 \section{Einleitung und Zielstellung}
 
-Wir wollen in dieser Arbeit die beiden die beiden Change Mangement-Ansätze Kaizen und \gls{toc} gegenüberstellen.
+Wir wollen in dieser Arbeit die beiden Change Mangement-Ansätze Kaizen und \gls{toc} gegenüberstellen.
 Gleichzeitig soll die Leistungsfähigkeit von \glspl{llm} zum schreiben von naturwissenschaftlichen Fachaufsätzen in diesem Szenario getestet und ausgereizt werden.
-\todo{weitere Erläuterungen von Kaizen und TOC mit Quellen.}
+
+Im Zusammenhang mit \gls{llm} gibt es einige Studien \todo{Quelle?} die Produktivitätsgewinne untersuchen. Da nur ein einzelner Text und darüber hinaus keine Vergleichsbasis in Sinne eines menschlich geschrieben Textes erstellt wird. Darüber hinaus stellt sich die Frage, mit welchem Niveau an Vorwissen und Erfahrung beim Schreibenden des Vergleichstextes anwenden sollte. Im Idealfall werden Texte von verschiedenen Niveaus wie Schüler, Studenten, Berufstätige, Forschende gepromptet und geschrieben. Dabei dürfte der Promptende\todo{Wieschreiben} nicht die selbe Person sein, die einen Vergleichstext schreibt, um Leaks in der Form von Wissen (Zeitersparnis) und Erwartbarkeit des Ergebnisses auszuschließen.\todo{In welches Kapitel kommt dieser Absatz?}
+\todo{weitere Erläuterungen von Kaizen und TOC und LLMS mit Quellen mit je einen Absatz.}
 \section{Methoden}\label{sec:methods}
 \input{methods}
 
@@ -75,8 +83,8 @@ Gleichzeitig soll die Leistungsfähigkeit von \glspl{llm} zum schreiben von natu
 Vielen Dank an Katerina Shapiro-Heiden für die Untersuchung der automatisierten Übersetzungen.
 \end{acks}
 
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-base}
+\bibliographystyle{unsrtdin}
+\bibliography{ChangeMangement.bib}
 
 \newpage
 %%
