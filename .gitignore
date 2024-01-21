@@ -2,9 +2,10 @@
 *.log
 *.aux
 *.bbl
-*.pdf
 *.blg
 *.out
-*.synctex.gz
+*.gz
 *.cut
 *.kate-swp
+*.tmp
+*.sync-conflict*
