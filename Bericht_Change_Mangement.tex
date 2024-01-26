@@ -1,9 +1,12 @@
 % !TeX spellcheck = de_DE
 \documentclass[acmlarge,authorversion,nonacm]{acmart}
 
-\usepackage[russian, german]{babel}
+\usepackage[german]{babel}
 \usepackage[acronym]{glossaries}
+\usepackage{pdfpages}
 \usepackage{todonotes}
+\usepackage{minted}
+\usemintedstyle{pastie}
 
 \usepackage{fontspec}
 \usepackage{xeCJK}
@@ -38,6 +41,9 @@
 \newacronym{ki}{KI}{Künstliche Intelligenz}
 
 \begin{document}
+	
+\includepdf[pages={1-8}]{KI_ChangeManagement_DE_fr_ru_en_without.pdf}
+
 	\title{ChangeMangement - Vergleich von Kaizen und Theory of Constraints}
 	
 	\author{Sebastian Heiden}
@@ -59,7 +65,7 @@
 \end{abstract}
 
 
-\received{31 Januar 2024}
+\received{\today}
 
 
 %%
@@ -117,14 +123,12 @@ Vielen Dank an Katerina Shapiro-Heiden für die Untersuchung der automatisierten
 \input{voruntersuchung}
 
 \subsection{Prompts und Antworten der Untersuchung}
+\input{untersuchung}
 
 \subsection{Zwischenübersetzungen}
 
-\subsubsection{Französisch}
-
-\subsubsection{Russisch}
-
-
+\includepdf[pages={1-5}]{KI_ChangeManagement_DE.pdf}
+\includepdf[pages={1-5}]{KI_ChangeManagement_DE_fr_without.pdf}
+\includepdf[pages={1-7}]{KI_ChangeManagement_DE_fr_ru_without.pdf}
 
 \end{document}
-\endinput

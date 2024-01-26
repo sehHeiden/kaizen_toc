@@ -9,3 +9,5 @@
 *.kate-swp
 *.tmp
 *.sync-conflict*
+*.pygtex
+*.pygstyle
